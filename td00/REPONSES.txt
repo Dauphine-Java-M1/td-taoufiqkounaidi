@@ -1,0 +1,22 @@
+NOM PRÉNOM : KOUNAIDI Taoufiq
+TP00
+Exercice 1 : Introduction à Maven
+4. version 3.6
+5. le param groupId permet d'identifier le groupe qui a créé le projet.
+et l'artifactId est utilisé par défaut pour construire le nom de l'artefact final 
+(exemple : pour un artifactId=monprojet, le nom du fichier jar généré sera monprojet-version.jar).
+6. mvn compile: <properties>
+    		  <maven.compiler.source>1.8</maven.compiler.source>
+    		  <maven.compiler.target>1.8</maven.compiler.target>
+  		</properties>
+- erreur qui s'affiche :   
+ERREUR "Source option 5 is no longer supported. Use 6 or later."
+8. le class path a pour rôle d'indiquer le chemin des classes de répertoires ou des fihiers ZIP et JAR.
+13. maven.compiler.target indique que la compilation du bytecode java sera en version 1.8 dans mon fichier POM
+
+Exercice 2 : 
+1. Le fichier JAR est executé
+
+TP00bis
+5. Si on tape la commande git diff dans notre terminal, on observe bien les modifications qu'on a effectué.
+8. 
