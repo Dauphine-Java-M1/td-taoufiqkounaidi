@@ -1,0 +1,54 @@
+NOM PRENOM : KOUNAIDI Taoufiq
+td01
+
+Exercice 1 : Point 
+1. car on a bien 2 variables privées appartenant à la même class que notre main.
+2. la class TestPoint ne reconnait pas les deux variables privées de la class Point.
+Une des solutions pour éviter l'erreur est de rendre les var. x & y public. Ou bien, faire un getter et setter public et les appeler dans TestPoint.
+3. C'est bien le concept d'encapsulation, on l'utilise afin de protéger et de cacher 
+l'implémentation de l'objets, c'est à dire en empêchant l'accès aux données par un 
+autre moyen que les services proposés. [source : commentcamarche.net]
+4. Un accesseur est une méthode qui va nous permettre d'accéder aux variables de nos objets en lecture.
+oui, on doit le faire
+5. Si on mets en place le nouveau constructeur et on supprime celui par défault, quand on initialise notre objets,
+ le constructeur par défault va pas etre pris en considération.
+6. On peut appeler les parametres du constructeur à notre choix.
+7. on peut créer une var static 'noOfObjects', l'initialiser à 0 ensuite l'incrémenter à chaque fois
+ qu'un objet à été créer même si on a plusieurs constructeurs différents.
+8. le compilateur a préference de prendre le constructeur ayant des paramètres.
+9. une façon de faire est de rendre nos var x et y static, ainsi que leurs getter et setter, 
+créer une autre var static point de type string qui affichera nos coordonnées de la façon (x,y)
+
+Exercice 2 : Égalité 
+1. code :
+	1 Point p1=new Point(1,2);
+	2 Point p2=p1;
+	3 Point p3=new Point(1,2);
+	4
+	5 System.out.println(p1==p2);
+	6 System.out.println(p1==p3);
+
+affichage : 
+	true
+	false
+l'opérateur == compare deux pointeurs ; et donc p1 et p2 on le même pointeur alors que pour p3 on 
+stock un nouveau objet en utilisant the key word 'new'
+3. le problème ce que ça affiche -1 pour l'index de p3 dans la list. Pour que le compilateur 
+reconnaît l'index de p3 je propose de remplacer :
+	Point p3=new Point(1,2);
+par 
+	Point p3=p2;
+
+Exercice 3 : Ligne brisée
+2. Quand on dépasse la capacité fixé, le compilateur leve une exception de type : ArrayIndexOutOfBoundsException, et donc ça ne marche pas.
+  
+
+Exercice 4 : Mutabilit´e et cercle
+1. la méthode translate( dx, dy) aura la signature : public void translate(dx,dy) or boolean
+5. le problème c'est qu'on créer un objet Circle et on appel la méthode translate qui concerne un point et non pas un circle. 
+Vaut mieux modifier dans notre main les paramètres de la méthode translate.
+
+Exercice 5 : Anneaux
+1. Oui, c'est intéressant de faire l'héritage dans notre cas. La class Ring sera notre class dérivée et Circle notre class mère.
+2. Si on fait System.out.println(ring); on feras appel à la méthode toString défini dans la class mère Circle. Pour résoudre le problème, 
+il est préferable de redéfinir la méthode toString dans la class fille Ring en utilisant le mots clé @Override.
