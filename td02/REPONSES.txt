@@ -1,0 +1,24 @@
+NOM PRENOM : KOUNAIDI Taoufiq
+td02
+
+Exercice 1 : Graphiques 2D
+1. une frame ou une jframe est la fenêtre de notre application, et le panel ou le jpanel est le ou les "panneau(x)" qui vont me permettre d'organiser 
+les éléments dans ma fenêtre. je peux mettre autant de (j)panel que je veux dans ma (j)frame, je les organises comme je le souhaites (avec les layouts).
+3. JFrame frame = new JFrame("Java Avancé - Graphic Display");
+
+// on créer notre fenêtre avec un titre
+   frame.setSize(new Dimension(500,500));
+// on précise la dimension de notre fenêtre
+
+// si on exécute y'aura rien qui s'affiche, c'est pour ça qu'on ajoute la ligne 
+   frame.setVisible(true);
+// On précise qu'on peut effectuer l'opération 'fermer la fenêtre'
+   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ 
+5. la méthode paintComponent() est appelée soit par JAVA quand il est nécéssaire de rafraîchir la fenêtre, soit quand notre programme appelle la méthode repaint().
+cette méthode repaint() appelle en interne la méthode paintComponent() et fournit à ma classe un objet Graphics pour qu'on puisse déssiner dans notre fenêtre.
+6. SWING vs AWT : Lorsqu'on utilise les composants du package AWT, le code natif utilisé pour obtenir le composant est généré par le système d'exploitation; c'est pour
+cette raison que l'aspect et la sensation change de système d'exploitation à autre. Pour les composants du package Swing, il est de la responsabilité de la JVM de 
+générer la vue pour les composants. SWING est basé sur le MVC et AWT non.
+
+Exercice 2 : Modèle et vue
