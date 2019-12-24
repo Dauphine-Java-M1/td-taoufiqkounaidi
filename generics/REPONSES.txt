@@ -1,0 +1,11 @@
+NOM PRÉNOM : KOUNAIDI Taoufiq
+TP04
+Exercice 1 : Maximums
+1. public static int max(int i, int...integers);
+4. Le bute de l'interface Comparable<T> est de pouvoir à notre objet T ai la méthode compareTo .
+
+Exercice 2 : Be wild !
+1. erreur : the methode print(List<Object> is not appicable for the arguments List<String>.
+2. on doit utiliser un type parametré 
+
+Exercice 4 : Fusion !
